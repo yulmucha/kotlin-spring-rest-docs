@@ -1,0 +1,42 @@
+ifndef::snippets[]
+:snippets: ../../../build/generated-snippets
+endif::[]
+= RESTful Products API Guide
+Yul Jeon;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+[[resources]]
+= Resources
+
+
+
+[[resources_products_list]]
+=== Listing products
+
+A `GET` request will list all of the service's products.
+
+==== HTTP request
+include::{snippets}/products/mockmvc-find-all/http-request.adoc[]
+
+==== Example response
+include::{snippets}/products/mockmvc-find-all/http-response.adoc[]
+
+
+[[resources_products_create]]
+=== Creating a product
+
+A `POST` request is used to create a product.
+
+==== HTTP request
+include::{snippets}/products/mockmvc-create/http-request.adoc[]
+
+==== Request fields
+include::{snippets}/products/mockmvc-create/request-fields.adoc[]
+
+==== Example response
+include::{snippets}/products/mockmvc-create/http-response.adoc[]

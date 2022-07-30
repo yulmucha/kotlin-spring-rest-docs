@@ -17,7 +17,7 @@ import org.springframework.restdocs.restassured3.RestAssuredRestDocumentation.do
 
 @ExtendWith(RestDocumentationExtension::class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class ProductRestControllerTest {
+class ProductControllerRestAssuredTest {
 
     @LocalServerPort
     val port: Int = 0
