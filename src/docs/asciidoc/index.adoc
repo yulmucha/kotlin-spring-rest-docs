@@ -1,5 +1,8 @@
-= RESTful Notes API Guide
-Andy Wilkinson;
+ifndef::snippets[]
+:snippets: ../../../build/generated-snippets
+endif::[]
+= RESTful Products API Guide
+Yul Jeon;
 :doctype: book
 :icons: font
 :source-highlighter: highlightjs
@@ -110,21 +113,28 @@ Andy Wilkinson;
 
 
 
-[[resources_notes_list]]
-=== Listing notes
+[[resources_products_list]]
+=== Listing products
 
-A `GET` request will list all of the service's notes.
+A `GET` request will list all of the service's products.
 
-operation::products/find-all[snippets='http-request,http-response']
+==== HTTP request
+include::{snippets}/products/find-all/http-request.adoc[]
+
+==== Example response
+include::{snippets}/products/find-all/http-response.adoc[]
 
 
+[[resources_products_create]]
+=== Creating a product
 
-[[resources_notes_create]]
-=== Creating a note
+A `POST` request is used to create a product.
 
-A `POST` request is used to create a note.
+==== HTTP request
+include::{snippets}/products/create/http-request.adoc[]
 
-operation::products/create[snippets='http-request,http-response']
+==== Example response
+include::{snippets}/products/create/http-response.adoc[]
 
 
 
